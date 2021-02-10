@@ -1,0 +1,66 @@
+.popup-box {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+  }
+   
+  .box {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 70vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: #055565;
+    border-radius: 4px;
+    padding: 20px;
+    /* border: 1px solid #999; */
+    overflow: auto;
+  }
+  .close-icon {
+    content: 'x';
+    cursor: pointer;
+    position: fixed;
+    right: calc(15% - 25px);
+    top: calc(100vh - 85vh - 2px);
+    background: #cad3d4;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #999;
+    font-size: 20px;
+  }
+
+  .input-section{
+    background-color: #056679;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 7px 6px #0000003b;  
+    }
+    .input-section input{
+        border-radius: 5px;
+        border: 1px solid rgb(226,226,226);
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #055565;
+        outline: none;
+        color: #08869e;
+    }
+    input::placeholder{
+        color: #08869e;
+    }
+    h1{
+      margin: 0;
+      margin-bottom: 15px;
+      color: #2790a5;
+      font-size: 20px;
+  }
