@@ -3,15 +3,12 @@ import Popup from "./popup";
 
 const List = ({ data, index, item, storeItem }) => {
   const [selectedItem, setSelectedItem] = useState("");
-  const [newItems, setNewItems] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
-  const [inputValue, setInputValue] = useState("");
   const [selectedIndex, setSelectedIndex] = useState();
 
   const deleteItems = (key) => {
     let _items = item;
     _items = _items.filter((data, index) => index !== key);
-    // console.log(_items);
     storeItem(_items);
   };
 
@@ -19,8 +16,8 @@ const List = ({ data, index, item, storeItem }) => {
     e.preventDefault();
     let _items = item;
     _items[selectedIndex] = newValue;
-    // console.log(_items);
     storeItem(_items);
+    setIsOpen(!isOpen);
   };
 
   

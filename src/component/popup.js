@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./popupStyle.css";
-// import TodoApp from './TodoApp';
 
 const Popup = ({ handleClose, edit, content, sendingData }) => {
   const [inputValue, setInputValue] = useState("");
